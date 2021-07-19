@@ -31,3 +31,14 @@ ro.telephony.default_network=22,20
 
 # Zygote Preforking
 persist.device.config.runtime_native.uasp_pool_enabled=true
+
+# ADB On Boot
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+persist.service.debuggable=1
+persist.service.adb.enable=1
+persist.sys.usb.config=adb
+
+# Priv-app permission
+ro.control_privapp_permissions=log
